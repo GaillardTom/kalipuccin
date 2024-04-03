@@ -3,8 +3,6 @@
 >[!Important]
 >**This is meant to be installed on a _fresh_ Kali install**. You _could_ do this on your battle-hardened Kali machine with all your previous configurations, but make sure you alter the script to preserve your previous configs or back them up first. 
 
----
-
 <table>
     <tr>
         <td><b>OS</b></td>
@@ -43,8 +41,6 @@
         <td>Picom</td>
     </tr>
 </table>
-
----
 
 ## `📸` Screenshots
 
