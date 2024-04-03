@@ -121,12 +121,9 @@ Firstly, you might be asking why someone would even bother ricing an OS as bloat
 
 ## `💬` Notes
 
->[!Warning]
->If you plan to use this out of the box, I want you to know that a lot of tinkering will be required. I can't be arsed to remove every single alias/file path for these configuration files, so note that a lot of the functionality might be hindered. You have officially been warned. 
-
 #### OVPN Support w/ Polybar
 
-I've added the `tun0` interface IP, which is common for CTF platforms like [TryHackMe](https://tryhackme.com/) and [Hack The Box](https://app.hackthebox.com) in the bottom left of the polybar. After connecting to a VPN instance with `openvpn yourvpn.ovpn &`, you can run the <kbd>Super</kbd> + <kbd>Alt</kbd> + <kbd>r</kbd> key combination to restart bspwm, which will now show your interface address. Once respawned, it will include the IP of your VPN instance. I'm certain this can be streamlined, so if you want to, you can come up with a way to do that. Or, classically, just have the IP in your `zsh`/`bash` prompt itself. If you want to add in support for other interfaces, like `tun0` or something, you should copy the `vpn.ini` file in the polybar modules folder (`~/.config/polybar/crowpuccin/modules/vpn.ini`), and change the `interface` variable to the name of the interface that you want. Or, you could just change the interface name in the default file, it's up to you.
+I've added the `tun0` interface IP, which is common for CTF platforms like [TryHackMe](https://tryhackme.com/) and [Hack The Box](https://app.hackthebox.com) in the bottom left of the polybar. After connecting to a VPN instance with `openvpn yourvpn.ovpn &`, you can run the <kbd>Super</kbd> + <kbd>Alt</kbd> + <kbd>r</kbd> key combination to restart bspwm, which will now show your interface address. Once respawned, it will include the IP of your VPN instance. I'm certain this can be streamlined, so if you want to, you can come up with a way to do that. Or, classically, just have the IP in your `zsh`/`bash` prompt itself. If you want to add support for other interfaces, like `tun0` or something, you should copy the `vpn.ini` file in the polybar modules folder (`~/.config/polybar/crowpuccin/modules/vpn.ini`), and change the `interface` variable to the name of the interface that you want. Or, you could just change the interface name in the default file, it's up to you.
 
 ```bash
 [module/vpn]
@@ -138,11 +135,11 @@ interval = 1.0
 
 #### Polybar
 
-Now, the polybar that I have set up is a gross abomination of the amazing work of this repository: [polybar-collection](https://github.com/Murzchnvok/polybar-collection). The `launch.sh` script tries to run the `crowpuccin` bar.
+Now, the polybar that I have set up is a gross abomination of the amazing work of this repository: [polybar-collection](https://github.com/Murzchnvok/polybar-collection).
 
 #### Neovim
 
-I've left out my Neovim "rice" because while moving files for this godforsaken build, I ended up completely borking the text editor. I *might* update this repository with a neovim rice that I make for my new machine, but I wouldn't hold my breath. There are too many more important things in the pipeline, and you're urged to rice Neovim by yourself.
+I've left out my Neovim "rice" because while moving files for this godforsaken build, I ended up completely borking the text editor. I *might* update this repository with a neovim rice that I make for my new machine, but I wouldn't hold my breath. You're urged to rice Neovim by yourself, it's fun :)
 
 ## `📝` Todo
 - Introduce various colour palettes like rose pine, nord, etc.
