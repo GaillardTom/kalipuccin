@@ -137,3 +137,4 @@ alias ferox="feroxbuster -x php pem pam html js css bak xxx old zip txt -o ferox
 alias neektoe="nikto -host"
 alias kerbrute="/opt/kerbrute/kerbrute_linux_amd64"
 alias autorec="autorecon --exclude-tags dirbuster,feroxbuster,dirsearch,ffuf,dirb -v --heartbeat 10"
+alias vim="nvim"

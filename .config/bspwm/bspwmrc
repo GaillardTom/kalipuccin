@@ -1,6 +1,6 @@
 #!/bin/sh
 sh $HOME/.config/polybar/launch.sh &
-feh --bg-scale $HOME/Pictures/wallpapers/darker_unicat.png &
+feh --bg-scale $HOME/Pictures/wallpapers/mandelbrot_side_magenta.png &
 
 # Java bullshit (some programs break if you don't set this)
 export _JAVA_AWT_WM_NONREPARENTING=1

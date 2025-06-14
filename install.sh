@@ -46,7 +46,7 @@ function update() {
 
 function install_programs() {
 	print_stage "installing necessary programs..."
-	sudo apt install hexyl dunst bat eza feh ranger bspwm alacritty picom polybar sxhkd neovim rofi neofetch btop -y 
+	sudo apt install hexyl dunst bat eza feh ranger bspwm alacritty picom polybar sxhkd neovim rofi btop -y 
 	echo -e ${OKAY} "finished! moving on..."
 }
 
@@ -77,7 +77,7 @@ function update_zsh() {
 
 function flex() {
 	print_stage "time to flex a bit :sunglasses:"
-	neofetch && for ((i=1; i<=5; i++)); do echo -ne ${INFO} "[$i/5]\r" && sleep 1; done
+	for ((i=1; i<=5; i++)); do echo -ne ${INFO} "[$i/5]\r" && sleep 1; done
 	clear && echo -e ${OKAY} "${G}the installation has finished${U}! enjoy your rice, nerd! ${R}please note that a reboot/restart is required${U}.\n${OKAY} press <${Y}q${U}> to exit." | less -r 
 }
 
